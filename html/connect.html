@@ -1,0 +1,110 @@
+  <! DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head> <meta charset-"utf-8"/>
+
+</head>
+<link rel="stylesheet" href="../css/styleconnexion.css"/>
+<link rel="stylesheet" href="../css/styleprojet.css"/> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body>
+  <nav class="header2">
+		<img
+		    src = "../image/logo.png"
+			alt = "Karyō"
+			class= "logo"
+			title ="Karyō" 
+          />
+          <button class="accueil"><a href="../acceuil.html"> <strong>home</strong><a/></button>
+          <button class="book"> <a href="book.html"> <strong> our books</strong>  </a> </button>
+          <button class="avis"><a href="avis.html"> <strong>review</strong> </a></button>
+          <button class="contact"> <a href="#"><strong> connect</strong> </a></button>
+      <form name ="formulaire" action="find.php" method= "POST" >
+        <label for="find"></label>
+        <input type="text" placeholder="لوج على كتاب" name="find a book" id="find" class="searchbar">
+        <button type="submit" name="recherche" class="searchbutton" onsubmit="return(document.Recherche.recherche)"> search</button>
+      </form>
+  </nav>
+
+
+<div class="container" id="container">
+    <div class="form-container sign-up-container">
+      <form class="connex" action="#">
+      <h2 class="h22">Create Account</h1>
+      <div class="social-container">
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-instagram"></a>
+      </div>
+       <span class="spanc">or use your email for registration</span>
+       <input class= "cnx"type="text" placeholder="Name" />
+       <input class="cnx" type="email" placeholder="Email" />
+       <input class ="cnx" type="password" placeholder="Password" />
+       <button class="c">Sign Up</button>
+      </form>
+     </div>
+    <div class="form-container sign-in-container">
+     <form class="connex" action="#">
+       <h2 class="h22">Sign in</h1>
+       <div class="social-container">
+         <a href="#" class="fa fa-facebook"></a>
+         <a href="#" class="fa fa-twitter"></a>
+         <a href="#" class="fa fa-instagram"></a>
+       </div>
+       <span class="spanc">or use your account</span>
+       <input class ="cnx"type="email" placeholder="Email" />
+       <input class="cnx" type="password" placeholder="Password"id="password" maxlength="30" size="30"name="password" required />
+       <a class="question" href="#">Forgot your password?</a>
+       <button class="c">Sign In</button>
+     </form class="connex">
+    </div>
+    <div class="overlay-container">
+      <div class="overlay">
+        <div class="overlay-panel overlay-left">
+          <h1 class="h11">!عسلامة</h1>
+          <p class ="pp" >مرحبا بيك بحذانا</p>
+          <button class="c" id="signIn">Sign In</button>
+        </div>
+        <div class="overlay-panel overlay-right">
+          <h1 class="h11">!عسلامة</h1>
+          <p class ="pp">مرحبا بيك بحذانا</p>
+          <button class="c" id="signUp">Sign Up</button>
+        </div>
+      </div>
+    </div>
+</div>
+	    <footer class="footer">
+            <div>        <ul>
+                       <li><a href="../acceuil.html">home</a></li>
+                       <li><a href="book.html"> our books </a></li>
+                       <li><a href="avis.html"> review </a></li>
+                       <li><a href="#"> connect </a></li>
+                    </ul>
+		              Karyō©2022-2023</div>
+		</footer>
+
+<script>
+const signUpButton = document.getElementById('signUp');
+const signInButton = document.getElementById('signIn');
+const container = document.getElementById('container');
+
+signUpButton.addEventListener('click', () => {
+	container.classList.add("right-panel-active");
+});
+
+signInButton.addEventListener('click', () => {
+	container.classList.remove("right-panel-active");
+});
+
+function controleMDP(mdp) {
+if (mdp.value.length < 8) {
+alert("Le mot de passe " + mdp.name + " doit contenir au moins 8 caractères");
+mdp.focus();
+return false;
+} else {
+return true;
+}
+}
+
+</script>
+</body>
+</html>

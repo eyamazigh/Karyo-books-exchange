@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+/* button upload */
+.uploadbutton
+{
+	   font-family : 'Poppins' ,sans-serif;
+       padding : 5px;
+       height :40px;
+       background-color:#F0BE86;
+       color: white;
+	   border: inset 1px #3B556D;
+	   border-radius: 20px;
+	   position: absolute;
+	   left: 1200px;
+	   top: 100px;
+	   width: 100px;
+}
+.uploadbutton:hover
+{zoom: 1.01;}
+/* les images */
+.img1
+{
+	  border: 1px solid #93441A;
+      border-radius: 4px;
+      padding: 1px;
+      width: 250px;
+	  left:-10px;
+	  position: relative;
+}
+.img2
+{
+	  border: 1px solid #93441A;
+      border-radius: 4px;
+      padding: 1px;
+      width: 250px;
+	  left:90px;
+	  position: relative;
+}
+.img3
+{
+	  border: 1px solid #93441A;
+      border-radius: 4px;
+      padding: 1px;
+      width: 250px;
+	  left:190px;
+	  position: relative;
+}
+.img4
+{
+	  border: 1px solid #93441A;
+      border-radius: 4px;
+      padding: 1px;
+      width: 250px;
+	  left:-10px;
+	  position: relative;
+}
+.img5
+{
+	  border: 1px solid #93441A;
+      border-radius: 4px;
+      padding: 1px;
+      width: 250px;
+	  left:90px;
+	  position: relative;
+}
+.img6
+{
+	  border: 1px solid #93441A;
+      border-radius: 4px;
+      padding: 1px;
+      width: 250px;
+	  left:190px;
+	  position: relative;
+}
+.img7
+{
+	  border: 1px solid #93441A;
+      border-radius: 4px;
+      padding: 1px;
+      width: 250px;
+	  left:-10px;
+	  position: relative;
+}
+.img8
+{
+	  border: 1px solid #93441A;
+      border-radius: 4px;
+      padding: 1px;
+      width: 250px;
+	  left:90px;
+	  position: relative;
+}
+/* responsive */
+@media only screen and (max-width: 700px){
+  img {
+    width: 40%;
+    margin: 3px 0;
+  }
+}
+
+@media only screen and (max-width: 500px){
+  .responsive {
+    width: 50%;
+  }
+}

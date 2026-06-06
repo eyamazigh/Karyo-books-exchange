@@ -1,0 +1,72 @@
+ <!DOCTYPE HTML>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Review</title>
+    <link rel="stylesheet" href="../css/stylepageavis.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  </head>
+  <body>
+     <nav class="header2">
+		<img
+		    src = "../image/logo.png"
+			alt = "Karyō"
+			class= "logo"
+			title ="Karyō" 
+          />
+          <li><a href="../acceuil.html"> <strong>home</strong><a/></li>
+          <li> <a href="book.html"> <strong> our books</strong></a> </li>
+          <li><a href="#"> <strong>review</strong> </a></li>
+          <li><a href="connect.html"><strong> connect</strong> </a></li>
+		 <form name ="formulaire" action="find.php" method= "POST" >
+		     <label for="find"></label>
+		     <input type="text" placeholder="لوج على كتاب" name="find a book" id="find" class="searchbar">
+			  <div class="searchbutton">search</div>
+		  </form>
+    </nav>
+	<section>
+    <div class="container"> 
+     <div class="post">
+        <div class="text">!يعطيكم الصحة</div>
+        <div class="edit">EDIT</div>
+      </div> 
+      <div class="star-widget">
+        <input type="radio" name="rate" id="rate-5">
+        <label for="rate-5" class="fas fa-star"></label>
+        <input type="radio" name="rate" id="rate-4">
+        <label for="rate-4" class="fas fa-star"></label>
+        <input type="radio" name="rate" id="rate-3">
+        <label for="rate-3" class="fas fa-star"></label>
+        <input type="radio" name="rate" id="rate-2">
+        <label for="rate-2" class="fas fa-star"></label>
+        <input type="radio" name="rate" id="rate-1">
+        <label for="rate-1" class="fas fa-star"></label>
+        <form action="#">
+          <header></header>
+          <div class="textarea">
+            <textarea cols="30" placeholder="باش تنصحنا ؟"></textarea>
+          </div>
+          <div class="btn">
+            <button type="submit">POST</button>
+          </div>
+        </form>
+      </div>
+    </div>
+	</section>
+    <script>
+      const btn = document.querySelector("button");
+      const post = document.querySelector(".post");
+      const widget = document.querySelector(".star-widget");
+      const editBtn = document.querySelector(".edit");
+      btn.onclick = ()=>{
+        widget.style.display = "none";
+        post.style.display = "block";
+        editBtn.onclick = ()=>{
+          widget.style.display = "block";
+          post.style.display = "none";
+        }
+        return false;
+      }
+    </script>
+  </body>
+</html>
